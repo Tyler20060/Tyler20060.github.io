@@ -1,0 +1,30 @@
+title: Colour Blindness Guide
+description: A comprehensive guide to understanding colour blindness, types, causes, and resources
+baseurl: ""
+url: "https://tyler20060.github.io"
+theme: minima
+markdown: kramdown
+
+# Jekyll settings
+permalink: /:title/
+excerpt_separator: "<!--more-->"
+
+# Collections
+collections:
+  pages:
+    output: true
+
+# Navigation
+navigation:
+  - name: Home
+    url: /
+  - name: Types
+    url: /types/
+  - name: Causes & Genetics
+    url: /causes/
+  - name: Living with It
+    url: /living/
+  - name: Accessibility
+    url: /accessibility/
+  - name: Resources
+    url: /resources/
