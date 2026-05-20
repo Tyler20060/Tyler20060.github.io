@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="{{ '/' | relative_url }}" class="logo">🎨 Colour Blindness Guide</a>
+      <nav>
+        <ul>
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/types' | relative_url }}">Types</a></li>
+          <li><a href="{{ '/causes' | relative_url }}">Causes & Genetics</a></li>
+          <li><a href="{{ '/living' | relative_url }}">Living with It</a></li>
+          <li><a href="{{ '/accessibility' | relative_url }}">Accessibility</a></li>
+          <li><a href="{{ '/resources' | relative_url }}">Resources</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Colour Blindness Guide. All rights reserved.</p>
+      <p>This website is designed to be accessible to people with colour blindness. We use text labels and patterns in addition to colors.</p>
+      <p><a href="#top">Back to top</a></p>
+    </div>
+  </footer>
+</body>
+</html>
